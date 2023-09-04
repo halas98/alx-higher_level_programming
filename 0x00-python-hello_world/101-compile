@@ -17,4 +17,3 @@ python3 -m py_compile "$PYFILE"
 
 # Print a message indicating successful compilation
 echo "Compiling $PYFILE ..."
-
