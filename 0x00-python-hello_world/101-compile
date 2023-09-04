@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Check if the PYFILE environment variable is set
+if [ -z "$PYFILE" ]; then
+    echo "PYFILE environment variable is not set."
+    exit 1
+fi
+
+# Check if the PYFILE exists
+if [ ! -f "$PYFILE" ]; then
+    echo "$PYFILE does not exist."
+    exit 1
+fi
+
+# Compile the Python script and save it as PYFILEc.pyc
+python3 -m py_compile "$PYFILE"
+
+# Print a message indicating successful compilation
+echo "Compiling $PYFILE ..."
+
