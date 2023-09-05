@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-for char_code in range(ord('z'), ord('a') - 1, -1):
-    char = chr(char_code)
-    if char_code % 2 == 0:
-        char = char.upper()
-    print("{:c}".format(i), end='')
+for i in range(122, 96, -1):
+    if i % 2 != 0:
+        print("{:c}".format(i - 32), end='')
+    else:
+        print("{:c}".format(i), end='')
