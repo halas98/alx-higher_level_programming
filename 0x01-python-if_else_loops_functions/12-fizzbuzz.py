@@ -11,4 +11,4 @@ def fizzbuzz():
             print(number, end=' ')
 if __name__ == "__main__":
     fizzbuzz()
-    print()  # Print a newline after the loop
+    print()
